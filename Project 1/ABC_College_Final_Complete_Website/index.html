@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="ABC College of Technology - academics, admissions, campus life, placements and student opportunities.">
+<title>ABC College of Technology | Home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/student-records.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div>📞 +91 98765 43210 &nbsp; | &nbsp; ✉️ info@abccollege.edu</div>
+  <div><a href="#contact">Contact</a><a href="#admissions">Admissions</a><a href="#student-login" data-modal="login">Student Login</a></div>
+</div>
+
+<header class="site-header" id="home">
+  <div class="nav-wrap">
+    <a class="brand" href="#home">
+      <span class="brand-mark">ABC</span>
+      <span><strong>ABC College</strong><small>of Technology</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <div class="nav-drop">
+        <button>Academics ▾</button>
+        <div class="drop-menu">
+          <a href="#programs">Programs</a><a href="#departments">Departments</a><a href="#calendar">Academic Calendar</a>
+        </div>
+      </div>
+      <a href="#admissions">Admissions</a>
+      <div class="nav-drop">
+        <button>Campus ▾</button>
+        <div class="drop-menu">
+          <a href="#campus-gallery">Facilities</a><a href="#student-life">Student Life</a><a href="#student-records">Student Records</a><a href="#events">Events</a>
+        </div>
+      </div>
+      <a href="#placements">Placements</a>
+      <a href="#news">News & Events</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search">⌕</button>
+      <button class="btn btn-gold" data-modal="apply">Apply Now</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <span class="eyebrow">WELCOME TO ABC COLLEGE</span>
+    <h1>Knowledge. <span>Innovation.</span> Excellence.</h1>
+    <p>Empowering students with industry-ready education, technology, research and a vibrant campus experience.</p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="#programs">Explore Programs →</a>
+      <button class="btn btn-outline" data-modal="video">▶ Campus Tour</button>
+    </div>
+    <div class="hero-mini-stats">
+      <div><strong>25+</strong><span>Years of Excellence</span></div>
+      <div><strong>40+</strong><span>Programs & Specializations</span></div>
+      <div><strong>95%</strong><span>Placement Support</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="announcement">
+  <strong>📢 Latest Updates</strong>
+  <span id="ticker">Admissions open for 2026–27</span>
+  <a href="#news">View all announcements →</a>
+</section>
+
+<section class="intro section" id="about">
+  <div class="intro-image"><img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1200&q=85" alt="ABC College campus"></div>
+  <div class="intro-copy">
+    <span class="eyebrow">ABOUT OUR COLLEGE</span>
+    <h2>Building careers, shaping futures.</h2>
+    <p>ABC College of Technology is designed around a student-first learning experience that combines strong academics, practical exposure, innovation and industry interaction.</p>
+    <div class="feature-list">
+      <div>✓ Experienced faculty & mentors</div><div>✓ Modern laboratories & smart classrooms</div>
+      <div>✓ Industry-oriented curriculum</div><div>✓ Sports, hostel & student activities</div>
+    </div>
+    <button class="btn btn-dark" data-modal="about">Read More About Us</button>
+  </div>
+</section>
+
+<section class="stats">
+  <div><strong>5,000+</strong><span>Students</span></div>
+  <div><strong>250+</strong><span>Faculty & Staff</span></div>
+  <div><strong>40+</strong><span>Academic Programs</span></div>
+  <div><strong>150+</strong><span>Recruiting Partners</span></div>
+</section>
+
+<section class="section" id="programs">
+  <div class="section-heading"><span class="eyebrow">ACADEMICS</span><h2>Explore Our Programs</h2><p>Choose a program that matches your ambition.</p></div>
+  <div class="filters" id="programFilters">
+    <button class="active" data-filter="all">All</button><button data-filter="ug">UG</button><button data-filter="pg">PG</button><button data-filter="engineering">Engineering</button><button data-filter="management">Management</button><button data-filter="business">Business</button><button data-filter="science">Science</button>
+  </div>
+  <div class="program-grid">
+    <article class="program-card" data-type="ug"><span>UG</span><h3>BCA</h3><p>Bachelor of Computer Applications with modern computing, AI and software development.</p><button data-modal="bca">View Program →</button></article>
+    <article class="program-card" data-type="pg"><span>PG</span><h3>MCA</h3><p>Advanced computer applications, cloud, data and full-stack technologies.</p><button data-modal="mca">View Program →</button></article>
+    <article class="program-card" data-type="ug engineering"><span>Engineering</span><h3>B.Tech Computer Science</h3><p>Industry-focused engineering education with practical projects and innovation.</p><button data-modal="btech">View Program →</button></article>
+    <article class="program-card" data-type="pg engineering"><span>PG · Engineering</span><h3>M.Tech Computer Science</h3><p>Advanced specialization, research and emerging technology.</p><button data-modal="mtech">View Program →</button></article>
+    <article class="program-card" data-type="ug management business"><span>UG · Business</span><h3>BBA</h3><p>Build a foundation in business, leadership, marketing and entrepreneurship.</p><button data-modal="bba">View Program →</button></article>
+    <article class="program-card" data-type="pg management business"><span>PG · Business</span><h3>MBA</h3><p>Develop strategic management skills through practical business learning.</p><button data-modal="mba">View Program →</button></article>
+    <article class="program-card" data-type="ug business"><span>UG · Business</span><h3>B.Com</h3><p>Study accounting, finance, taxation and the fundamentals of commerce.</p><button data-modal="bcom">View Program →</button></article>
+    <article class="program-card" data-type="ug science"><span>UG · Science</span><h3>B.Sc Data Science</h3><p>Learn statistics, data analysis, machine learning and data visualization.</p><button data-modal="datascience">View Program →</button></article>
+    <article class="program-card" data-type="ug science"><span>UG · Science</span><h3>B.Sc Biotechnology</h3><p>Explore biology, biotechnology methods and hands-on laboratory practice.</p><button data-modal="biotech">View Program →</button></article>
+    <article class="program-card" data-type="ug engineering"><span>Engineering</span><h3>B.Tech AI & Data Science</h3><p>Apply artificial intelligence and data engineering to real-world problems.</p><button data-modal="ai">View Program →</button></article>
+    <article class="program-card" data-type="ug engineering"><span>Engineering</span><h3>B.Tech Mechanical Engineering</h3><p>Study design, manufacturing, materials and modern mechanical systems.</p><button data-modal="mechanical">View Program →</button></article>
+    <article class="program-card" data-type="ug engineering"><span>Engineering</span><h3>B.Tech Civil Engineering</h3><p>Learn structural design, construction, surveying and sustainable infrastructure.</p><button data-modal="civil">View Program →</button></article>
+  </div>
+</section>
+
+<section class="light-section" id="departments">
+  <div class="section-heading"><span class="eyebrow">ACADEMIC DEPARTMENTS</span><h2>Learn From Experts</h2></div>
+  <div class="dept-grid">
+    <div>💻 <strong>Computer Science & IT</strong><p>Software, AI, IoT, cloud & data.</p></div>
+    <div>⚙️ <strong>Engineering</strong><p>Practical engineering & innovation.</p></div>
+    <div>📊 <strong>Management</strong><p>Business, leadership & entrepreneurship.</p></div>
+    <div>🔬 <strong>Science</strong><p>Foundational and applied sciences.</p></div>
+  </div>
+</section>
+
+<section class="section admissions" id="admissions">
+  <div class="section-heading"><span class="eyebrow">ADMISSIONS 2026–27</span><h2>Start Your Journey</h2><p>Simple, transparent and student-friendly admission process.</p></div>
+  <div class="steps">
+    <div><b>01</b><h3>Choose Program</h3><p>Explore courses and eligibility.</p></div>
+    <div><b>02</b><h3>Apply Online</h3><p>Complete the application form.</p></div>
+    <div><b>03</b><h3>Verification</h3><p>Submit required documents.</p></div>
+    <div><b>04</b><h3>Confirm Admission</h3><p>Complete fee and enrollment.</p></div>
+  </div>
+  <div class="center"><button class="btn btn-gold" data-modal="apply">Apply Online Now</button><button class="btn btn-light" data-modal="brochure">Download Brochure</button></div>
+</section>
+
+<section class="section student-records" id="student-records">
+  <div class="section-heading"><span class="eyebrow">STUDENT DATA</span><h2>Student Registration</h2><p>Register a student and manage a local student list. Records stay in this browser until exported.</p></div>
+  <div class="student-records-layout">
+    <form id="studentForm" class="student-form">
+      <label>Full Name<input name="name" required maxlength="100" autocomplete="name"></label>
+      <label>Email Address<input name="email" type="email" required maxlength="254" autocomplete="email"></label>
+      <label>Phone Number<input name="phone" type="tel" required maxlength="30" autocomplete="tel"></label>
+      <label>Program
+        <select name="program" required>
+          <option value="">Choose a program</option>
+          <option>BCA</option><option>MCA</option><option>B.Tech Computer Science</option><option>M.Tech Computer Science</option>
+          <option>BBA</option><option>MBA</option><option>B.Com</option><option>B.Sc Data Science</option>
+          <option>B.Sc Biotechnology</option><option>B.Tech AI &amp; Data Science</option><option>B.Tech Mechanical Engineering</option><option>B.Tech Civil Engineering</option>
+        </select>
+      </label>
+      <label>Academic Year<input name="academicYear" required placeholder="2026–27" maxlength="9"></label>
+      <button class="btn btn-dark" type="submit">Save Student</button>
+      <p class="student-storage-note">This demo stores records in browser storage, not on a shared server. Export the list as CSV or <a href="data/students.csv" download>download the CSV template</a>.</p>
+    </form>
+    <div class="student-list">
+      <div class="student-list-heading"><h3>Saved Students <span id="studentCount">0</span></h3><button class="btn btn-light" id="exportStudents" type="button">Export CSV</button></div>
+      <div class="student-table-wrap">
+        <table>
+          <thead><tr><th>Name</th><th>Email</th><th>Program</th><th>Academic Year</th><th></th></tr></thead>
+          <tbody id="studentTableBody"><tr><td colspan="5">No student records yet.</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="campus-gallery">
+  <div class="section-heading"><span class="eyebrow">CAMPUS LIFE</span><h2>Explore Our Campus</h2><p>Everything students need to learn, live and grow.</p></div>
+  <div class="campus-gallery-grid">
+    <article class="campus-card campus-card-wide"><img src="https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1400&q=85" alt="Campus"><div class="campus-card-overlay"><span>Campus</span><h3>Beautiful Green Campus</h3></div></article>
+    <article class="campus-card"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=900&q=85" alt="Laboratory"><div class="campus-card-overlay"><span>Labs</span><h3>Advanced Computer Labs</h3></div></article>
+    <article class="campus-card"><img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=900&q=85" alt="Hostel"><div class="campus-card-overlay"><span>Hostel</span><h3>Comfortable Student Hostel</h3></div></article>
+    <article class="campus-card"><img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=900&q=85" alt="Library"><div class="campus-card-overlay"><span>Library</span><h3>Digital & Central Library</h3></div></article>
+    <article class="campus-card"><img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=85" alt="Sports ground"><div class="campus-card-overlay"><span>Sports</span><h3>Sports Ground & Fitness</h3></div></article>
+    <article class="campus-card"><img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=900&q=85" alt="Cafeteria"><div class="campus-card-overlay"><span>Cafeteria</span><h3>Student Cafeteria</h3></div></article>
+    <article class="campus-card campus-card-wide"><img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1400&q=85" alt="Classroom"><div class="campus-card-overlay"><span>Classrooms</span><h3>Smart Learning Spaces</h3></div></article>
+  </div>
+</section>
+
+<section class="video-strip"><div><span class="eyebrow">CAMPUS TOUR</span><h2>See ABC College in action</h2><p>Discover our learning spaces, facilities and student life.</p></div><button class="btn btn-gold" data-modal="video">▶ Watch Campus Video</button></section>
+
+<section class="section" id="placements">
+  <div class="section-heading"><span class="eyebrow">CAREER & PLACEMENTS</span><h2>From Classroom to Career</h2><p>Career preparation, internships and industry connections.</p></div>
+  <div class="placement-grid">
+    <div class="placement-big"><strong>95%</strong><span>Students receiving placement / career support</span></div>
+    <div><strong>150+</strong><span>Recruiting partners</span></div><div><strong>20 LPA</strong><span>Highest package*</span></div><div><strong>500+</strong><span>Internship opportunities</span></div>
+  </div>
+</section>
+
+<section class="light-section" id="student-life">
+  <div class="section-heading"><span class="eyebrow">STUDENT LIFE</span><h2>More Than Academics</h2></div>
+  <div class="life-grid">
+    <div>🏆 <h3>Clubs & Societies</h3><p>Technical, cultural and creative communities.</p></div>
+    <div>🎉 <h3>Events & Festivals</h3><p>Annual fests, competitions and celebrations.</p></div>
+    <div>🏏 <h3>Sports</h3><p>Outdoor and indoor sports activities.</p></div>
+    <div>💡 <h3>Innovation</h3><p>Hackathons, projects and entrepreneurship.</p></div>
+  </div>
+</section>
+
+<section class="section" id="events">
+  <div class="section-heading"><span class="eyebrow">NEWS & EVENTS</span><h2>What's Happening</h2></div>
+  <div class="news-grid" id="news">
+    <article><span>15 OCT 2026</span><h3>Admissions Open for 2026–27</h3><p>Applications are now open for selected undergraduate and postgraduate programs.</p><button data-modal="news1">Read More</button></article>
+    <article><span>28 NOV 2026</span><h3>Annual Technical Fest</h3><p>Students showcase projects, coding skills and innovative ideas.</p><button data-modal="news2">Read More</button></article>
+    <article><span>10 DEC 2026</span><h3>Industry Internship Drive</h3><p>Career cell announces internship opportunities with partner companies.</p><button data-modal="news3">Read More</button></article>
+  </div>
+</section>
+
+<section class="section contact-section" id="contact">
+  <div class="section-heading"><span class="eyebrow">CONTACT US</span><h2>Let's Connect</h2></div>
+  <div class="contact-grid">
+    <div><h3>ABC College of Technology</h3><p>Knowledge Park, Jaipur, Rajasthan, India</p><p>📞 +91 98765 43210<br>✉️ info@abccollege.edu</p><div class="map-box">📍 Campus Location<br><small>Interactive map can be connected here.</small></div></div>
+    <form id="contactForm"><input required placeholder="Your Name"><input required type="email" placeholder="Email Address"><input placeholder="Phone Number"><textarea required rows="5" placeholder="Your Message"></textarea><button class="btn btn-dark" type="submit">Send Message</button></form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div><div class="footer-brand">ABC College of Technology</div><p>Knowledge • Innovation • Excellence</p></div>
+    <div><h4>Quick Links</h4><a href="#about">About</a><a href="#programs">Academics</a><a href="#admissions">Admissions</a><a href="#placements">Placements</a></div>
+    <div><h4>Student</h4><a href="#" data-modal="login">Student Login</a><a href="#student-records">Student Records</a><a href="#events">Notices</a><a href="#" data-modal="brochure">Downloads</a></div>
+    <div><h4>Follow Us</h4><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">LinkedIn</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 ABC College of Technology. All Rights Reserved. <span>Privacy Policy • Terms & Conditions</span></div>
+</footer>
+
+<div class="modal" id="modal"><div class="modal-card"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div></div>
+<div class="search-overlay" id="searchOverlay"><div class="search-box"><button id="searchClose">×</button><h2>Search ABC College</h2><input id="searchInput" placeholder="Search programs, admissions, campus..."><p>Try: BCA, admissions, library, placements</p></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

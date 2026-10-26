@@ -1,0 +1,18 @@
+.student-records-layout{max-width:1200px;margin:auto;display:grid;grid-template-columns:minmax(260px,.8fr) minmax(0,1.6fr);gap:28px;align-items:start}
+.student-form{display:grid;gap:14px;padding:25px;border:1px solid #e5e9f0;border-radius:18px;box-shadow:0 8px 25px #0b17360d}
+.student-form label{display:grid;gap:6px;font-size:.88rem;font-weight:700;color:#334155}
+.student-form input,.student-form select{width:100%;min-width:0;padding:12px;border:1px solid #dbe1ea;border-radius:9px;font:inherit;color:#172033;background:#fff}
+.student-storage-note{margin:0;color:#667085;font-size:.8rem}
+.student-storage-note a{color:#0b4d9b;text-decoration:underline}
+.student-list{min-width:0}
+.student-list-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.student-list-heading h3{margin:0}
+.student-list-heading h3 span{display:inline-grid;place-items:center;min-width:28px;height:28px;margin-left:5px;padding:0 7px;border-radius:20px;background:#eef2f7;font:700 .8rem Inter,sans-serif}
+.student-table-wrap{overflow-x:auto;border:1px solid #e5e9f0;border-radius:12px}
+.student-table-wrap table{width:100%;border-collapse:collapse;text-align:left;font-size:.84rem}
+.student-table-wrap th,.student-table-wrap td{padding:12px;border-bottom:1px solid #e5e9f0;white-space:nowrap}
+.student-table-wrap th{background:#f7f9fc;color:#475569}
+.student-table-wrap tbody tr:last-child td{border-bottom:0}
+.student-remove{border:0;background:none;color:#9a3030;font:600 .82rem Inter,sans-serif;cursor:pointer}
+@media(max-width:800px){.student-records-layout{grid-template-columns:1fr}}
+@media(max-width:500px){.student-list-heading{align-items:flex-start;flex-direction:column}}
